@@ -1,10 +1,13 @@
-export default function TestComponent({ name = 'world' }) {
+export default function TestComponent({ name = "world" }) {
   return (
     <>
-      <div>Hello, {name}!</div>
+      <div>
+        Hello, {name}!
+        <p>This is pure JSX component</p>
+      </div>
       <style jsx>{`
         div {
-          background-color: #111;
+          background-color: #888;
           border-radius: 0.5em;
           color: #fff;
           margin-bottom: 1.5em;
@@ -12,5 +15,5 @@ export default function TestComponent({ name = 'world' }) {
         }
       `}</style>
     </>
-  )
+  );
 }
